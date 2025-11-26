@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Portfólio | Nathan Mendes",
-  description: "Portfólio de sites comerciais desenvolvidos por Nathan Mendes.",
+  description: "Portfólio profissional de Nathan Mendes.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body className="bg-darkBg text-white antialiased">
+        {children}
+      </body>
     </html>
   );
 }
+
